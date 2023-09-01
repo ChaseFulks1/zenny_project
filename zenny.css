@@ -1,0 +1,292 @@
+.title {
+    font-size: 98px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 20px 0;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 4s forwards;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.quote-area {
+    background: conic-gradient(from 45deg, #dbe5e5, #f9f1e4, #dbe5e5);
+    position: left;
+    top: 50%;  
+    right: 10px;
+}
+
+#quote-container {
+    text-align: center;
+    margin: 20px auto;
+}
+#quote-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#generate-quote {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;  
+    right: 2%;  
+    z-index: 1000;
+}
+
+
+#randomQuote {
+    color: #b294b6;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-icon {
+    display: none;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        display:block;
+        color: white;
+        font-size: 0.9em;
+        font-family: 'Pacifico', cursive;
+        position:auto;
+        top: 100%;        
+        background-color: #d0a9c0;
+        width: 100%;
+        margin: 0;
+        flex: 1;
+    }
+
+    .show-tabs {
+        display: block;   
+        z-index:1000;    /* show tabs when the menu is toggled */
+    }
+
+    .dropdown-icon {
+        color: white;
+        font-family: 'Pacifico', cursive;
+        display: inline-block;
+        position:relative;
+        padding: 10px;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}
+
+html { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: conic-gradient(from 45deg, #dbe5e5, #f9f1e4, #dbe5e5);
+}
+
+.header {
+    background: conic-gradient(from -135deg, #d0a9c0, #b294b6);
+    text-align: center;
+}
+
+/* This will hide the tabs by default */
+.tabs {
+    display: none;
+}
+
+/* This class will be toggled to show/hide the tabs */
+.show-tabs {
+    display: block; /* or "flex" if you want a flex layout, etc. */
+}
+
+.tab {
+    padding: 10px;
+    align-self: center;
+    border-right: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tab:last-child {
+    border-right: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 20px 0;
+}
+
+.main-content {
+    background: linear-gradient(to bottom, #f9f1e4, #dbe5e5);
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    flex-basis: 20%;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.image img {
+    max-width: 30%;
+    text-align: right;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: white; 
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.sub-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.sub-header {
+    font-size: 2rem;
+    font-family: 'Cormorant', Garamond;
+    color: #f9c6cc; 
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: underline;
+    padding-left: 15px;
+}
+
+.description {
+    font-family: 'Noto Sans', sans-serif;
+    color: #b294b6;
+    flex: 1;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.link-color {
+    color: inherit;
+    text-decoration: none;
+}
+
+.healthy-foods-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.healthy-foods-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 45%;
+    font-family: 'Noto Sans', sans-serif;
+    color: #b294b6;
+}
+
+.healthy-foods-list a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.healthy-foods-list a:hover {
+    color: #f9c6cc; /* Some color change on hover, adjust as per your theme */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    max-width: auto;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+h1, h2 {
+    color: #f9c6cc;
+}
+p {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #b294b6
+}
+button {
+    padding: 10px 15px;
+    background-color: #8a5f36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #746641;
+}
+
+h1 {
+    background: conic-gradient(from -135deg, #d0a9c0, #b294b6);
+    padding: 10px; /* to give some space around the title */
+    display: inline-block; /* to fit the background to the content */
+    color: white; /* changing the text color to white for better visibility */
+    border-radius: 5px; /* optional: to give rounded corners */
+}
+
+.benefits_list {
+    color:#b294b6;
+}
+
+.go-back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #8a5f36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove the underline from the anchor */
+    text-align: center;
+    margin-top: 20px; /* Give it some spacing */
+}
+
+.go-back-button:hover {
+    background-color: #746641;
+}
